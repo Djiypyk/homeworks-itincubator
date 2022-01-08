@@ -1,0 +1,29 @@
+.App {
+
+    font-size: 18px;
+    padding: 20px;
+    background: rgb(119,119,119);
+    background: linear-gradient(137deg, rgba(119,119,119,1) 0%, rgba(82,82,167,0.989233193277311) 17%, rgba(0,212,255,1) 65%);
+    display: flex;
+    justify-content: center;
+    min-height: 880px;
+
+
+}
+
+.focus {
+   padding: 20px;
+    border: 2px solid #000028 ;
+    border-radius: 10px;
+    min-width: 350px ;
+}
+h1 {
+    text-align: center;
+    font-size: 28px;
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+

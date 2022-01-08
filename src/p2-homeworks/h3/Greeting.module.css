@@ -1,0 +1,43 @@
+.someClass {
+
+}
+
+
+.error {
+    border: 1px solid red;
+}
+
+.errorItem {
+    height: 25px;
+    font-size: 12px;
+    color: red;
+    font-weight: 600;
+}
+
+.btn_add {
+    width: 50px;
+    height: 20px;
+
+    margin: 5px;
+    background-color: #00076f;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.btn_add:hover {
+    opacity: 0.9;
+}
+.btn_block {
+    background-color: darkred;
+    color: antiquewhite;
+}
+
+.counter {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.text_container {
+    width: 100%;
+    text-align: center;
+}

@@ -5,3 +5,7 @@
 .spanClassName {
 
 }
+
+input{
+    cursor: pointer;
+}

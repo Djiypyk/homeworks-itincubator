@@ -1,23 +1,21 @@
-.inputContainer {
-    position: relative;
-}
 .superInput {
-    padding: 10px;
-    border-radius: 100px;
-    max-width: 300px;
-    display: inline-block;
-    margin-bottom: 20px   ;
+    border: 3px solid #7072ff;
+    border-radius: 5px;
 }
 
 .errorInput {
-    border: 3px solid lightgreen;
-    background: salmon;
+    border: 3px solid #ff0000;
+    border-radius: 5px;
+    background: #ff5454;
+    opacity: 0.8;
 }
 
 .error {
-    font-size: 14px;
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    color: salmon;
+    color: red;
+}
+.inp {
+    background: #61dafb;
+}
+.inp:focus {
+    outline: none;
 }

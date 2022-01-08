@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PreJunior() {
+function JuniorPlus() {
     return (
         <div>
             Something will be here soon
@@ -8,7 +8,7 @@ function PreJunior() {
     )
 }
 
-export default PreJunior
+export default JuniorPlus
 
 // сделайте по аналогии пустые страницы джун и джун+
 // туда будут добавляться следующие дз

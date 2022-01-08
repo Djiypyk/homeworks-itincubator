@@ -9,9 +9,5 @@
 }
 
 .testSpanError {
-    color: #5aa0da;
-    font-weight: 500;
-}
-.altButton {
-    border:2px solid white;
+    color: #ce0000;
 }

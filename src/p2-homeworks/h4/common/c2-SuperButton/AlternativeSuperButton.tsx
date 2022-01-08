@@ -1,21 +1,8 @@
-import React, {ButtonHTMLAttributes, DetailedHTMLProps} from 'react'
-import s from './SuperButton.module.css'
+import React from 'react'
 
-type DefaultButtonType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-type MyButtonType = DefaultButtonType & {
-    secondary?: boolean
-    danger?: boolean
-}
-
-function AlternativeSuperButton({secondary, danger, className, ...restProps}: MyButtonType) {
-    const MyButtonClass = `${s.default} ${secondary ? s.secondary : s.primary} ${danger ? s.danger : ''} ${className}`
+function AlternativeSuperButton() {
     return (
-
-            <button
-                className={MyButtonClass}
-                {...restProps}
-            />
-
+        <button/>
     )
 }
 

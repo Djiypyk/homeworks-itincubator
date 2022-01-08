@@ -1,16 +1,19 @@
 import React from 'react'
+import {HashRouter} from 'react-router-dom'
 import Header from './Header'
-import MyRoutes from './Routes'
-import {HashRouter as Router} from 'react-router-dom'
-import s from './pages/HW5.module.scss'
+import Navigation from "./Navigation";
+
 
 function HW5() {
     return (
-        <div className={s.wrapper}>
-            <Router>
+        <div>
+            <HashRouter>
+
                 <Header/>
-                <MyRoutes/>
-            </Router>
+
+                <Navigation/>
+
+            </HashRouter>
         </div>
     )
 }

@@ -1,67 +1,43 @@
-
-.hwName {
-    text-align: center;
-    display: block;
-    font-size: 20px;
-    color: #3b6758;
-}
-.affairs {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px auto;
+.someClass p {
+    font-weight: 600;
 
 }
-.affairBody{
-    min-height: 200px;
-}
-.affair {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 5px;
-}
-.affair>*{
-    flex: 0 0 33.33%;
-}
-.affair>*:first-child{
-    text-align: left;
-}
-.buttons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 
+.btnFilter {
+    border-radius: 20px;
+    margin: 10px 5px;
+    font-weight: 700;
+    background-color: #00076f;
+    color: antiquewhite;
 }
-.btnCont{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-.btn{
 
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    background: #17da9f;
-    transition-duration: 300ms;
+.btnActive {
+    opacity: 0.7;
 }
-.btn:not(:last-child){
-    margin-right: 10px;
+
+.low {
+    color: green;
 }
-.active {
-    background: #056e50;
+
+.middle {
+    color: orange;
 }
 
 .high {
-    color: #fa9b72;
+    color: darkred;
 }
-.middle{
-    color: #98cc84;
+
+.nameAffair {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
 }
-.low {
-    color: #8bccbc;
+
+
+.btnDel {
+    height: 20px;
+    border-radius: 7px;
+    margin: 0 5px;
+    font-weight: 700;
+
 }

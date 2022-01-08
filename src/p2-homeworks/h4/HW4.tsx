@@ -1,12 +1,8 @@
 import React, {ChangeEvent, useState} from 'react'
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
-import c from './../../p1-main/m1-ui/u1-app/App.module.scss'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
-import {MySuperButton} from "./common/SuperLinkButton/MySuperButton";
-import {MySuperInput} from "./common/MySuperInput/MySuperInput";
-import MyCheckbox from "./common/MyCheckbox/MyCheckbox";
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -16,7 +12,7 @@ function HW4() {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text)
+            alert(text) // если нет ошибки показать текст
         }
     }
 
@@ -24,8 +20,10 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
-        <div className={c.marginTop}>
-            <span className={c.hw__title}>homeworks 4</span>
+        <div>
+            <hr/>
+            <h2>Homeworks 4</h2>
+
             <div className={s.column}>
                 <SuperInputText
                     value={text}
@@ -34,8 +32,9 @@ function HW4() {
                     error={error}
                     spanClassName={s.testSpanError}
                 />
+
                 <SuperInputText
-                    className={s.blue}
+                    className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}
@@ -45,10 +44,10 @@ function HW4() {
                 </SuperButton>
 
                 <SuperButton
-                    red
+                    red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete
+                    delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 <SuperButton disabled>
@@ -61,22 +60,19 @@ function HW4() {
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text
+                    some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
+
+                {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
-
-                {/*Личное творчество*/}
-
-                <MySuperButton
-                    svg
-                >Button</MySuperButton>
-                <MySuperButton
-                    svg
-                    secondary
-                >Button 2</MySuperButton>
-                <MySuperInput placeholder={'Input something'} error={error} value={text} onChangeText={setText}/>
-                <MyCheckbox isChecked={checked} onChange={testOnChange} text={'check me'}/>
             </div>
+
+            <hr/>
+            {/*для личного творчества, могу проверить*/}
+            {/*<AlternativeSuperInputText/>*/}
+            {/*<AlternativeSuperButton/>*/}
+            {/*<AlternativeSuperCheckbox/>*/}
+            <hr/>
         </div>
     )
 }
