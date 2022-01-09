@@ -1,10 +1,20 @@
 import React from 'react'
+import styles from './Error404.module.css'
+
+
+const error = {
+    color: 'red',
+    fontWeight: '700',
+    fontSize: '24px'
+}
 
 function Error404() {
     return (
-        <div>
-            <div>404</div>
-            <div>Page not found!</div>
+        <div className={styles.container}>
+
+            <div style={error}>404</div>
+            <div style={error}>Page not found!</div>
+            <div>Please use the navigation.</div>
             <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
         </div>
     )
