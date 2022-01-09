@@ -7,7 +7,7 @@ import {PATH} from './Navigation'
 function Header() {
     return (
         <div className={s.dropdown}>
-            <button className={s.dropBtn}>View HomeWorks</button>
+            <button className={s.dropBtn}>View All HomeWorks</button>
             <div className={s.dropdown_content}>
                 <NavLink to={PATH.PRE_JUNIOR}
                          className={({isActive}) => isActive ? (s.active_link + ' ' + s.link) : s.link}
