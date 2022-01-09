@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/homeworks-itincubator/static/css/main.3ac8bf47.chunk.css",
+    "main.js": "/homeworks-itincubator/static/js/main.da781b3f.chunk.js",
+    "main.js.map": "/homeworks-itincubator/static/js/main.da781b3f.chunk.js.map",
+    "runtime-main.js": "/homeworks-itincubator/static/js/runtime-main.42c343da.js",
+    "runtime-main.js.map": "/homeworks-itincubator/static/js/runtime-main.42c343da.js.map",
+    "static/js/2.b82429e9.chunk.js": "/homeworks-itincubator/static/js/2.b82429e9.chunk.js",
+    "static/js/2.b82429e9.chunk.js.map": "/homeworks-itincubator/static/js/2.b82429e9.chunk.js.map",
+    "index.html": "/homeworks-itincubator/index.html",
+    "static/css/main.3ac8bf47.chunk.css.map": "/homeworks-itincubator/static/css/main.3ac8bf47.chunk.css.map",
+    "static/js/2.b82429e9.chunk.js.LICENSE.txt": "/homeworks-itincubator/static/js/2.b82429e9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42c343da.js",
+    "static/js/2.b82429e9.chunk.js",
+    "static/css/main.3ac8bf47.chunk.css",
+    "static/js/main.da781b3f.chunk.js"
+  ]
+}
