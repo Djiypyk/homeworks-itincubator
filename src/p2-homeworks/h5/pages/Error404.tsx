@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './Error404.module.css'
 
-
 const error = {
-    color: 'red',
+    color: 'white',
     fontWeight: '700',
     fontSize: '24px'
 }
