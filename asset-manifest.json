@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/homeworks-itincubator/static/css/main.abbfed25.chunk.css",
-    "main.js": "/homeworks-itincubator/static/js/main.ef537397.chunk.js",
-    "main.js.map": "/homeworks-itincubator/static/js/main.ef537397.chunk.js.map",
+    "main.css": "/homeworks-itincubator/static/css/main.579791d1.chunk.css",
+    "main.js": "/homeworks-itincubator/static/js/main.30a39731.chunk.js",
+    "main.js.map": "/homeworks-itincubator/static/js/main.30a39731.chunk.js.map",
     "runtime-main.js": "/homeworks-itincubator/static/js/runtime-main.42c343da.js",
     "runtime-main.js.map": "/homeworks-itincubator/static/js/runtime-main.42c343da.js.map",
-    "static/js/2.93775d12.chunk.js": "/homeworks-itincubator/static/js/2.93775d12.chunk.js",
-    "static/js/2.93775d12.chunk.js.map": "/homeworks-itincubator/static/js/2.93775d12.chunk.js.map",
+    "static/js/2.bf6912d4.chunk.js": "/homeworks-itincubator/static/js/2.bf6912d4.chunk.js",
+    "static/js/2.bf6912d4.chunk.js.map": "/homeworks-itincubator/static/js/2.bf6912d4.chunk.js.map",
     "index.html": "/homeworks-itincubator/index.html",
-    "static/css/main.abbfed25.chunk.css.map": "/homeworks-itincubator/static/css/main.abbfed25.chunk.css.map",
-    "static/js/2.93775d12.chunk.js.LICENSE.txt": "/homeworks-itincubator/static/js/2.93775d12.chunk.js.LICENSE.txt"
+    "static/css/main.579791d1.chunk.css.map": "/homeworks-itincubator/static/css/main.579791d1.chunk.css.map",
+    "static/js/2.bf6912d4.chunk.js.LICENSE.txt": "/homeworks-itincubator/static/js/2.bf6912d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.42c343da.js",
-    "static/js/2.93775d12.chunk.js",
-    "static/css/main.abbfed25.chunk.css",
-    "static/js/main.ef537397.chunk.js"
+    "static/js/2.bf6912d4.chunk.js",
+    "static/css/main.579791d1.chunk.css",
+    "static/js/main.30a39731.chunk.js"
   ]
 }
