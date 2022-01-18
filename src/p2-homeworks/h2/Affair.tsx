@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import styles from './Affairs.module.css'
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -16,7 +17,7 @@ function Affair(props: AffairPropsType) {
     return (
         <div className={styles.nameAffair}>
             <p className={styles[props.affair.priority]}>{props.affair.name}</p>
-            <button className={styles.btnDel} onClick={deleteCallback}>X</button>
+            <HighlightOffIcon className={styles.btnDel} onClick={deleteCallback}>X</HighlightOffIcon>
         </div>
 
 

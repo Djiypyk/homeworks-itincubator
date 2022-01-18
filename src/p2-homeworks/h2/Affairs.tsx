@@ -3,6 +3,7 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
 
+
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
     setFilter: (filter: FilterType) => void
