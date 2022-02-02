@@ -17,69 +17,50 @@
 .red {
     background: red;
 }
+
 .button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     position: relative;
     margin: 5px;
+    padding: 5px;
     overflow: hidden;
     cursor: pointer;
+    background-color: transparent;
+    border-radius: 0.6em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 
-    width: 100px;
-    height: 25px;
-
-    border-radius: 30%;
-}
-.button::after {
-    display: block;
-    content: '';
-    position: absolute;
-
-    left: -130%;
-    top: 0;
-    height: 100%;
-    width: 20%;
-
-    transform: skew(45deg);
-
-    background-color: #ffffff;
-    opacity: 0.7;
-
-    z-index: 14;
 }
 
-.button:hover::after {
-    animation: blink 0.5s ease;
+.button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
-.button:hover::before {
-    display: block;
-    content: '';
-    position: absolute;
-
-    left: -100vw;
-    top: 0;
-    height: 100vh;
-    width: 300vw;
-
-    background-color: #ffffff;
-    opacity: 0.2;
-
-    z-index: 7;
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
 }
 
-.button:focus{
-    outline: #a2a3fb;
-}
-.button:active{
-    background: #a2a3fb;
-}
-.button:disabled{
+
+.button:disabled {
     color: darkgrey;
     cursor: auto;
+
 }
-.button:disabled::after{
+
+.button:disabled::after {
     z-index: -1;
 }
 
-.button:disabled::before{
+.button:disabled::before {
     z-index: -1;
 }
