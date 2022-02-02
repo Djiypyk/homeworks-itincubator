@@ -13,12 +13,12 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string>('') // need to fix any
+    const [name, setName] = useState<string>('')
+    const [error, setError] = useState<string>('')
 
-    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.currentTarget.value)
-        if ((/[1-9]/g).test(e.currentTarget.value)) {
+        if ((/[1-9]/g).test(e.currentTarget.value) ) {
             return setError('Name must contain only letters.')
         } else if (e.currentTarget.value.length <= 1) {
             return setError('Name is short. Please enter a valid name.')
@@ -26,19 +26,24 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             return setError('')
         }
 
-        // need to fix
     }
     const addUser = () => {
-            alert(`Hello  ${name}!`) // need to fix
+        if (name.length > 1) {
+            alert(`Hello  ${name}!`)
             addUserCallback(name)
             setName('')
+        } else {
+            alert('Write your name')
+        }
+
+
     }
     const onKeyDownAddName = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
             addUser()
         }
     }
-    const totalUsers = users.length // need to fix
+    const totalUsers = users.length
 
 
     return (

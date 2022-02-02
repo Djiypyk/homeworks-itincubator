@@ -3,11 +3,11 @@ import styles from './Greeting.module.css'
 
 
 type GreetingPropsType = {
-    name: string // need to fix any
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
-    addUser: () => void // need to fix any
-    error: string // need to fix any
-    totalUsers: number // need to fix any
+    name: string
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
+    addUser: () => void
+    error: string
+    totalUsers: number
     onKeyDownAddName: (event: KeyboardEvent<HTMLInputElement>) => void
 }
 
