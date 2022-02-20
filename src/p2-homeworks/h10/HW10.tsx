@@ -14,30 +14,23 @@ function HW10() {
         dispatch(loadingAC())
         setTimeout(() => {
             dispatch(loadingAC())
-        }, 5000)
+        }, 3000)
         console.log('loading...')
     };
 
     return (
         <div>
             <hr/>
-            homeworks 10
-
-            {/*should work (должно работать)*/}
+            <h2> Homeworks 10 </h2>
             {isLoading
                 ? (
-                    <div><img src={spinner} alt="Spinner loader"/></div>
+                    <div style={{textAlign: 'center'}} ><img src={spinner} alt="Spinner loader"/></div>
                 ) : (
-                    <div>
+                    <div style={{textAlign: 'center'}}>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
             }
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
         </div>
     )
 }
