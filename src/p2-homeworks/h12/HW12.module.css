@@ -21,3 +21,11 @@
 .some-text {
     color: darkslateblue;
 }
+.light {
+    background: white;
+}
+.radio_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
